@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 等边三角形
+        let row1 = 5;
+        for (let i = 1; i <= row1; i++) {
+            for (let k = 1; k <= row1 - i; k++) {
+                document.write("&nbsp;&nbsp;")
+            }
+            for (let j = 1; j <= i; j++) {
+                document.write("*&nbsp;&nbsp;")
+            }
+            document.write('<br>')
+        }
+        // 平行四边形 
+        // 229970625马国强
+        let row2 = 5;
+        for (let i = 1; i <= row2; i++) {
+            for (let k = 1; k <= row2 - i; k++) {
+                document.write("&nbsp;&nbsp;")
+            }
+            for (let j = 1; j <= row2; j++) {
+                document.write('*&nbsp;&nbsp;')
+            }
+            document.write('<br>')
+        }
+        // 菱形
+        //上半部分
+        let rows3 = 3;
+        for (let i = 1; i <= rows3; i++) {
+            for (let k = 1; k <= rows3 - i; k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let j = 1; j <= 2 * i - 1; j++) {
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+        // 下半部分
+        for (let i = rows3 - 1; i >= 1; i--) {
+            for (let k = 1; k <= rows3 - i; k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let j = 1; j <= 2 * i - 1; j++) {
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

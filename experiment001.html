@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1
+        //229970625 马国强
+        function getSum(num1, num2) {
+            var sum = num1 + num2;
+            console.log(num1 + "+" + num2 + "=" + (num1 + num2));
+            return sum;
+        }
+        let result = getSum(1, 2);
+        console.log(result);
+        // console.log("\n");
+
+        // 2
+        //229970625 马国强
+        // getProduct(2,4);
+        var getProduct = function (num1, num2) {
+            console.log(num1 + "*" + num2 + "=" + num1 * num2);
+        }
+        getProduct(2, 4);
+        // console.log("\n");
+
+        // 3
+        //229970625 马国强
+        var a = 100;
+        function test() {
+            console.log(a);
+            a = 10;
+            console.log(a);
+        }
+        test();
+        console.log(a);
+        console.log("\n");
+
+        // 4
+        //229970625 马国强
+        var a = 10;
+        fun1();
+        function fun1() {
+            var b = 20;
+            console.log(a);
+            console.log(b);
+            a = 30;
+        }
+        console.log("\n");
+
+        //5
+        //229970625 马国强
+        function fun2() {
+            console.log(arguments[0]);
+            console.log(arguments[1]);
+            console.log(arguments[2]);
+        }
+        fun2(1, 2, 3);
+        console.log("\n");
+
+        //6
+        //229970625 马国强
+        function fun3() {
+            for (var i in arguments) {
+                console.log(arguments[i]);
+            }
+        }
+        fun3(1, 2, 3);
+        console.log("\n");
+
+        //7
+        //229970625 马国强
+        "use strict";
+        let num = 100;
+        console.log(num);
+
+        //8
+        //229970625 马国强
+        "use strict";
+        num2 = 100;
+        console.log(num2);
+
+        //9
+        // 229970625 马国强
+        "use strict";
+        try {
+            num2 = 100;
+            console.log(num2);
+        } catch (error) {
+            console.log("发生错误：" + error.message);
+        }
+
+    </script>
+</body>
+
+</html>
